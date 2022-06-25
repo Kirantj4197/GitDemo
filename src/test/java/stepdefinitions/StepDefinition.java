@@ -39,6 +39,7 @@ public class StepDefinition {
     @Given("^user launches the application$")
     public void user_launches_the_application() throws Throwable {
        System.out.println("sce 2 step 1");
+       System.out.println("chnages to test pushing the code to git hub ");
     }
     
 
