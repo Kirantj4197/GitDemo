@@ -1,0 +1,117 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-28T00:57:53.117Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1914900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.add()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Landing on HomePage",
+        "description": "",
+        "id": "application-login;landing-on-homepage",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.subtract()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is on Landing Page",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user login to the application with \"abc\" and password \"456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 36
+                },
+                {
+                  "val": "456",
+                  "offset": 55
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.user_login_to_the_application_with_something_and_password_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 989000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Home Page is populated",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.home_page_is_populated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1002200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "links to all courses are displayed \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.links_to_all_courses_are_displayed_something(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanityTest"
+          },
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]

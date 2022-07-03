@@ -19,19 +19,24 @@
 
 Feature: Application Login
  
+ 
+ @sanityTest @smokeTest
   Scenario: Landing on HomePage
     Given User is on Landing Page
-    When user login to the application with "abc" and password "456"
+    When user login to the application 
+    | tjkr | ranjith | tharmaraj | jayanthi |
     Then Home Page is populated
     And  links to all courses are displayed "true"
     
-    
+    @smokeTest
     Scenario: Mobile Login
     Given user launches the application
     When user login to the application with "tjkr" and password "123456"
     Then Home Page is populated
     And  links to all courses are displayed "false"
     
+    
+    @sanityTest
     Scenario Outline: parameters explained
     Given  User is on Page
     When logins with <username> and <password>

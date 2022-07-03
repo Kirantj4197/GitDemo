@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.486">
+    <testcase classname="Application Login" name="Landing on HomePage" time="0.125">
+        <system-out><![CDATA[Given User is on Landing Page...............................................passed
+When user login to the application with "abc" and password "456"............passed
+Then Home Page is populated.................................................passed
+And links to all courses are displayed "true"...............................passed
+]]></system-out>
+    </testcase>
+</testsuite>

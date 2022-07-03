@@ -1,5 +1,10 @@
 package stepdefinitions;
 
+import java.util.List;
+
+
+
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -21,6 +26,16 @@ public class StepDefinition {
    
     	System.out.println(strArg1);
     	System.out.println(strArg2);
+    }
+    
+    
+    @When("^user login to the application$")
+    public void user_login_to_the_application(DataTable data )throws Throwable {
+    	
+    	List<List<String>> obj=data.asList(String.class);
+    	obj.get(0);
+    	
+       
     }
 
 
@@ -56,6 +71,28 @@ public class StepDefinition {
 
     @Then("^links to all courses are validated$")
     public void links_to_all_courses_are_validated() throws Throwable {
+     
+    }
+    
+    
+
+    @Given("^driver is available$")
+    public void driver_is_available() throws Throwable {
+     
+    }
+
+    @When("^driver is initialised$")
+    public void driver_is_initialised() throws Throwable {
+        
+    }
+
+    @Then("^URL is reached out$")
+    public void url_is_reached_out() throws Throwable {
+       
+    }
+
+    @And("^windows is maximised$")
+    public void windows_is_maximised() throws Throwable {
      
     }
 
